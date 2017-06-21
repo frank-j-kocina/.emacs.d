@@ -1,7 +1,8 @@
+.recentf
 .smex-items
+.DS_Store
 *~$
 places
-.recentf
 cider-history
 projectile-bookmarks.eld
 projectile.cache
