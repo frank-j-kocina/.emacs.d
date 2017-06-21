@@ -139,7 +139,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (all-the-icons neotree groovy-mode diff-hl dash auto-complete rainbow-delimiters projectile paredit clojure-mode-extra-font-locking clojure-mode ac-cider cider web-mode tagedit spinner smex seq queue magit js2-mode ido-ubiquitous git-rebase-mode git-commit-mode exec-path-from-shell edts))))
+    (markdown-mode+ markdown-preview-mode all-the-icons neotree groovy-mode diff-hl dash auto-complete rainbow-delimiters projectile paredit clojure-mode-extra-font-locking clojure-mode ac-cider cider web-mode tagedit spinner smex seq queue magit js2-mode ido-ubiquitous git-rebase-mode git-commit-mode exec-path-from-shell edts))))
 
 
 (global-auto-revert-mode t)
@@ -181,3 +181,5 @@
 
 (add-hook 'prog-mode-hook 'diff-hl-flydiff-mode)
 (add-hook 'vc-dir-mode-hook 'diff-hl-flydiff-mode)
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
